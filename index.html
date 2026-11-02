@@ -2,23 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Hidoku: Number Path Puzzle</title>
-<meta name="description" content="Hidoku: a calm, ad-free number path puzzle for Android.">
-<link rel="icon" href="icon.png">
-<style>
-  :root { --paper:#f6f2ea; --ink:#1c1b19; --muted:#6e6a62; --pen:#2f5da8; }
-  @media (prefers-color-scheme: dark) { :root { --paper:#18181a; --ink:#ece7dd; --muted:#9c978e; --pen:#8ab4f8; } }
-  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 680px; margin: 48px auto; padding: 0 16px; line-height: 1.6; color: var(--ink); background: var(--paper); }
-  img { width: 96px; height: 96px; border-radius: 22px; }
-  h1 { margin: 16px 0 4px; font-size: 1.8rem; } a { color: var(--pen); } .muted { color: var(--muted); }
-</style>
+<meta name="description" content="Free Hidoku number path puzzles in your browser: six sizes, four levels, unique solutions, progress saving and printable puzzle sheets. No ads.">
+<meta name="theme-color" content="#f6f2ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#18181a" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="app.css">
+<style id="page-style">@page { size: A4 portrait; margin: 12mm; }</style>
 </head>
 <body>
-<img src="icon.png" alt="Hidoku icon">
-<h1>Hidoku: Number Path Puzzle</h1>
-<p class="muted">A calm, ad-free logic puzzle for Android.</p>
-<p>Fill the grid with the numbers from 1 to N so that every number touches the next one — horizontally, vertically or diagonally. Six board sizes, four levels, fresh puzzles with a unique solution every time, and your progress always saved.</p>
-<p><a href="privacy-policy.html">Privacy Policy</a> · Contact: <a href="mailto:office@radicalsolutions.be">office@radicalsolutions.be</a></p>
+<div id="app" aria-live="polite"></div>
+<div id="print-root" aria-hidden="true"></div>
+<dialog id="dialog"></dialog>
+<noscript><p style="padding:24px">Hidoku needs JavaScript to run.</p></noscript>
+<script type="module" src="app.js"></script>
 </body>
 </html>

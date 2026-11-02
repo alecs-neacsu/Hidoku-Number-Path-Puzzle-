@@ -1,0 +1,15 @@
+{
+  "name": "Hidoku: Number Path Puzzle",
+  "short_name": "Hidoku",
+  "description": "Free, offline Hidoku number path puzzles with unique solutions. No ads.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f2ea",
+  "theme_color": "#f6f2ea",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
